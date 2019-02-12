@@ -10,6 +10,8 @@
   <%= @post.text %>
 </p>
 
+<%= image_tag(@post.image_url, :width => 600) if @post.image.present? %>
+
 <p>
   <strong>Date:</strong>
   <%= @post.date %>
